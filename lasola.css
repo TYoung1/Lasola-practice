@@ -1,0 +1,372 @@
+body{
+    margin: 0;
+    min-width: 1280px;
+    word-break: keep-all;
+    font-family: 'NotoSansKR', '맑은 고딕', 'Malgun Gothic', 돋움, Dotum, 'Apple SD Gothic Neo', sans-serif;
+}
+div{
+    line-height: 1.5; letter-spacing: -1px;
+}
+ul,li{
+    list-style: none; line-height: 1.5; margin: 0;padding: 0; letter-spacing: -1px;
+}
+p{
+    margin: 0;padding: 0;line-height: 1.5;font-weight: 300; letter-spacing: -1px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.skip{
+    position: absolute; left: 0; top:-100px; width: auto; height: 50px; line-height: 50px; background-color: #2d5b79;color: #fff;
+    text-align: center; font-size: 20px; transition: all 0.5s;
+}
+.skip:focus{
+    top:0;
+}
+header{
+    height: 81px;
+    position: relative;
+    text-align: center;
+}
+header h1{
+    position: absolute; left: 60px;top:0; margin-top: 21px;
+}
+header h1 .logo{
+    width: 114px; height: 50px;  color: transparent;
+}
+.hide{
+    position: absolute; left: -5000px;
+}
+
+header .menu li{
+    display: inline-block; 
+}
+header .menu li a{
+    position: relative; display: block; height: 81px; margin: 0 20px; font-size: 18px; line-height: 81px;
+}
+header .menu li a:hover{
+    color: #2d5b79;  font-weight:bold;
+}
+header .menu li a:hover:after{
+    content:""; position: absolute; height: 1px; width: 100%; background-color: #2d5b79;left: 0;bottom:15px; display: block;
+}
+.menu_big{
+    margin-bottom: 0;
+}
+header .service{
+    position: absolute;right: 60px; top: 0;  
+}
+header .service_big {
+    margin-top: 0;
+}
+header .service li{
+    position: relative; float: left;padding-left:20px; 
+}
+header .service li::after{
+    content: ""; position: absolute; width: 1px;height: 7px; left:10px; top: 50%; background-color: #ccc; transform: translateY(-50%);
+}
+header .service li a{
+    display: block; height: 81px; line-height: 81px; font-size: 14px;
+}
+header .service li:first-child::after{
+    display: none;
+}
+
+.visual{
+   position: relative; padding: 0 50px;
+}
+.slider .banner>div{
+    height: 640px;
+}
+.slider .banner .slide{
+    background: url(./img/bg_main0802.jpg) no-repeat center;
+}
+.slider .prev{
+  color: transparent;  position: absolute; background: url(./img/sp_com.png) no-repeat; background-position: -128px -60px; display: block; left: 80px; top: 50%; width: 25px; height: 47px; transform: translateY(-50%);
+}
+.slider .next{
+    color: transparent; position: absolute; background: url(./img/sp_com.png) no-repeat; background-position: -158px -60px; display: block; right: 80px; top: 50%; width: 25px; height: 47px; transform: translateY(-50%);
+}
+
+.product{
+    text-align: center; width: 1180px; height: 126px; margin: 0 auto; padding: 0 50px;
+}
+.product_big{
+    display: inline-block;
+    width: 1050px;
+    margin: 21px 0 40px;
+    zoom: 1;
+    vertical-align: top;
+    
+}
+.product_big li{
+    display: inline-block; position: relative;
+}
+.product li a {
+    font-size: 18px;
+    height: 65px;
+    line-height: 65px;
+    margin:0 20px;
+    
+}
+.product_big li a::after{
+    content:""; position: absolute; height: 5px; width: 100%; background-color: #dfd9d1;left: 0;bottom:-3px; display: block;
+}
+.product_big li a:hover{
+    font-weight: bold; color: #2d5b79; 
+}
+.product li a:hover{
+     font-weight: bold; color: #2d5b79; 
+    
+}
+.product_big li a:hover:after{
+    background-color: #2d5b79;
+}
+
+.videoSlide{
+    position: relative;
+    padding: 30px 40px 50px;
+    margin: 0 auto;
+    width: 1180px;
+    height: 797.75px;
+    box-sizing: border-box;
+    
+}
+.videoSlide .title{
+    margin-bottom: 25px;
+    font-size: 30px; font-weight: 600; text-align: center; 
+}
+.vid_box {
+   position: relative;   padding: 0;
+}
+.vid_prev{
+    color: transparent;  position: absolute; background: url(./img/sp_com.png) no-repeat; background-position: -128px -60px; display: block; left: 80px; top: 50%; width: 25px; height: 47px; transform: translateY(-50%);
+  }
+.vid_next{
+      color: transparent; position: absolute; background: url(./img/sp_com.png) no-repeat; background-position: -158px -60px; display: block; right: 80px; top: 50%; width: 25px; height: 47px; transform: translateY(-50%);
+  }
+
+.magazine{
+    position: relative; height: 670px; background-color: #dfd9d1; 
+}
+.magazine h2{
+    font-size: 28px; line-height: 100%; text-align: center; margin: 0; padding: 50px 0 13px;
+}   
+.magazine p{
+    text-align: center; line-height: 100%; margin: 3px 0 30px; font-size: 16px; color: #3a3b36;
+}
+.magazine .slide_box > div{
+    width:1180px; height: 430px; position: absolute; left: 50%; transform: translate(-50%,0);
+}
+
+.magazine .slide_box .left{
+    overflow: hidden; float: left; width: 800px; height: 430px;
+}
+.magazine .slide_box .left img{
+    width: 100%;
+}
+.magazine .slide_box .right{
+    float: right; width: 380px;height: 430px; background-color: #fff;
+    padding: 20px 20px 0;box-sizing: border-box; margin: 0;
+}
+.magazine .slide_box .right li a{
+    display: table; width: 100%;
+}
+.magazine .slide_box .right li a div{
+    display: table-cell; height: 82px; vertical-align: middle; padding-left: 100px;position: relative; font-size: 16px; color: #333;
+}
+.magazine .slide_box .right li a img {
+    position: absolute; left: 0; top: 0;
+}
+.magazine .slide_box .right li{
+    padding-bottom: 20px;
+}
+.magazine .slide_box .right li a strong{
+    font-size: 13px; color: #000; display: block;
+}
+
+.products{
+    padding: 40px 0; width: 100%;
+}
+.products > div{
+    width: 1180px; margin: 0 auto; padding: 0 50px;
+}
+.products > div h2{
+    text-align: center; font-size: 30px; font-weight: 800; margin: 0;
+}
+.products > div p{
+    text-align: center; font-weight: 300; margin: 3px 0 38px 0;
+}
+.products > div img{
+    margin-bottom: 10px;
+}
+.products > div > a{
+    width: 280px; display: inline-block; margin-right: 15px; vertical-align: top;
+}
+.products > div > a:last-child{
+    margin-right: 0;
+}
+.products > div a p{
+    font-size: 18px; font-weight: 600; text-align: center; margin: 0;
+}
+.products > div a p:hover{
+    text-decoration: underline;
+}
+.products > div a span{
+    font-size: 15px; font-weight: 300; display: inline-block; margin: 0 5px; text-align: center;
+}
+
+.blogvisual{
+    padding: 40px 0 90px; height: 660px; background-color: #dfd9d1; position: relative;
+}
+.blogvisual > div{
+    width: 1180px; margin: 0 auto; padding: 0 50px; position: relative;
+}
+.blogvisual > div h2{
+    text-align: center; font-size: 30px; font-weight: 800; margin: 0;
+}
+.blogvisual > div p{
+    text-align: center;  font-weight: 300; margin: 3px 0 38px 0;
+}
+.blogvisual .max{
+     width: 1480px !important; position: relative; padding: 0;
+}
+.blogvisual > div ul {
+    position: relative;  display: block;
+}
+.blogvisual > div ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 280px;
+    height: 553px;
+    margin-right: 20px; 
+    
+}
+.blogvisual > div ul a{
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+.blogvisual > div ul li .tit{
+    font-size: 18px; font-weight: 800; margin: 0 0 10px 0; text-align: center;
+}
+.blogvisual > div ul li .txt{
+    box-sizing: border-box; display: block; padding: 26px 28px 24px;
+}
+.blogvisual > div ul li a:hover{
+    text-decoration: underline;
+}
+.blogvisual > div ul li span{
+    font-weight: 700; font-size: 12px; position: absolute; left: 0; top: 0;
+}
+.blogvisual > div ul li .main{
+    padding-left: 67px; margin-top: 0; margin-bottom: 5px; box-sizing: border-box; width: 100%;overflow: hidden;
+    position: relative;font-size: 16px; text-overflow: ellipsis; text-align: left; font-weight: 400;
+}
+.blogvisual > div ul li .main:last-child{
+    margin-bottom: 0;
+}
+.tip{
+    padding: 40px 0; height: 445px;
+}
+.tip > div{
+    position: relative; width: 1180px; margin: 0 auto; padding: 0 50px;
+}
+.tip > div h2{
+    text-align: center; font-size: 30px; font-weight: 600; margin: 0;
+}
+.tip > div p{
+    text-align: center; font-weight: 300; margin: 3px 0 38px 0;
+}
+.tip > div > div{
+    width: 1280px !important;  position: relative; padding: 0;
+}
+.tip > div > div a{
+    display: inline-block; width: 100%;height: 100%;
+}
+.tip > div >div ul li{
+    float: left; width: 280px ; margin-right: 20px;
+}
+.tip > div > div ul li img{
+    width: 280px;height: 160px;
+}
+.tip > div > div ul li p{
+    padding: 0 15px;
+    margin-top: 16px; margin-bottom: 0;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    height: 3em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    overflow: hidden;
+}
+.option{
+    padding: 55px 0 ;height: 390px; box-sizing: border-box; background: url(./img/background.jpg);
+}
+.option > div{
+    width: 1180px;  margin: 0 auto; padding: 0 50px;
+}
+.option .f_agency{
+    zoom: 1; 
+}
+.option .f_agency ul{
+    display: inline-block;
+}
+.option .f_agency a{
+    float: left; width: 280px;height: 280px;
+    background:url(./img/agency.jpg);  margin-right: 20px;
+}
+.option .f_agency a:hover{
+
+}
+.option .f_agency a p{
+    color: #fff; font-size: 18px; padding-top: 153px; font-weight: bold; text-align: center; 
+}
+.option .wrap2{
+    float: left; width: 580px; height: 280px; zoom: 1;
+}
+.option .notice{
+    float: left; margin-right: 20px; width: 280px; height: 280px; background-color: #f2f0ed; position: relative;
+}
+.option .notice  h2{
+    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 25px; color: #2d5b79; border-bottom: 1px solid #fff;
+}
+.option .notice li{
+    border-bottom: 1px solid #fff;
+}
+.option .notice li:last-child{
+    border: 0; 
+}
+.option .notice a{
+    padding: 12px 30px;
+}
+.option .tit{
+    min-height: 24px; overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; line-height: 1.2em; height: 2.4em; text-align: left; white-space: normal;
+}
+.option .days{
+    margin-top: 23px; display: inline-block; font-size: 13px; color: #929292;
+}
+
+.option .news{
+    float: left;  width: 280px; height: 280px; background-color: #f2f0ed; position: relative;
+}
+.option .news h2{
+    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 25px; color: #2d5b79; border-bottom: 1px solid #fff;
+}
+.option .news li{
+    border-bottom: 1px solid #fff;
+}
+.option .news li:last-child{
+    border: 0;
+}
+.option .news a{
+    padding: 12px 30px;
+}
+.option .f_product{
+
+}
