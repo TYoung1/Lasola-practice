@@ -311,36 +311,59 @@ header .service li:first-child::after{
 .option > div{
     width: 1180px;  margin: 0 auto; padding: 0 50px;
 }
-.option .f_agency{
-    zoom: 1; 
+.option .f_agency{ 
+    zoom: 1;  width: 280px;
+    margin: 0;float: left; margin-right: 20px;
 }
 .option .f_agency ul{
     display: inline-block;
 }
+.option .f_agency li{
+    background-image:url(./img/agency.jpg); width: 280px; height: 280px;
+}
 .option .f_agency a{
-    float: left; width: 280px;height: 280px;
-    background:url(./img/agency.jpg);  margin-right: 20px;
+     display: block;
+     width: 280px;height: 280px;
+      margin-right: 20px;
+}
+.option .f_agency span{
+    display: none;
+    font-size: 13px;
 }
 .option .f_agency a:hover{
-
+    background: #1E3269;
+    opacity:0.5 ;
+    transition: ease-in 0.3s;
+}
+.option .f_agency a:hover span{
+    display: block;
+   
 }
 .option .f_agency a p{
     color: #fff; font-size: 18px; padding-top: 153px; font-weight: bold; text-align: center; 
 }
 .option .wrap2{
-    float: left; width: 580px; height: 280px; zoom: 1;
+    float: left; width: 580px; height: 280px; zoom: 1; margin-right: 20px;
 }
 .option .notice{
-    float: left; margin-right: 20px; width: 280px; height: 280px; background-color: #f2f0ed; position: relative;
+    float: left; margin-right:20px; width: 280px; height: 280px; background-color: #f2f0ed; position: relative;
 }
 .option .notice  h2{
-    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 25px; color: #2d5b79; border-bottom: 1px solid #fff;
+    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 23px; color: #2d5b79; border-bottom: 1px solid #fff;
 }
 .option .notice li{
     border-bottom: 1px solid #fff;
 }
 .option .notice li:last-child{
     border: 0; 
+}
+.option .notice li:hover .tit{
+    text-decoration: underline;
+}
+.option .notice li p{
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 20px;
 }
 .option .notice a{
     padding: 12px 30px;
@@ -356,7 +379,7 @@ header .service li:first-child::after{
     float: left;  width: 280px; height: 280px; background-color: #f2f0ed; position: relative;
 }
 .option .news h2{
-    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 25px; color: #2d5b79; border-bottom: 1px solid #fff;
+    text-align: center; margin: 0; height: 65px; line-height: 65px; font-size: 23px; color: #2d5b79; border-bottom: 1px solid #fff;
 }
 .option .news li{
     border-bottom: 1px solid #fff;
@@ -364,9 +387,92 @@ header .service li:first-child::after{
 .option .news li:last-child{
     border: 0;
 }
+.option .news li:hover .tit{
+    text-decoration: underline;
+}
 .option .news a{
     padding: 12px 30px;
 }
+.option .news li p{
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 20px;
+}
 .option .f_product{
+   float: right; background: #fff; width: 240px; height: 280px; padding: 0 20px; color: #000;
+}
+.option .f_product h2{
+    font-size: 25px; color: #2d5b79; margin: 0; height: 65px; line-height: 65px; text-align: center;
+}
+.option .f_product .select{
+    width: 100%; background-color: #f2f0ed; height: 45px; margin: 10px 0; border: none; font-size: 15px;
+}
+.option .f_product .put{
+    width: 100%; background-color: #f2f0ed; height: 45px; border: none; color:#929292;font-size: 15px;
+}
+.option .f_product .search{
+    width: 100%; background: #2d5b79; height: 45px; text-align: center; line-height: 45px; color: #fff; margin-top: 30px;
+}
+.option .f_product .search a{
+    color: #fff; 
+}
+.footer1{
+    background: #383f43; height: 70px; 
+}
 
+.footer1 > div{
+    padding: 0 20px; margin: 0 auto; width: 1180px; position: relative;
+}
+.footer1 ul{
+    display: flex; 
+}
+.footer1 li{
+    height: 70px; line-height: 70px; margin-right: 18px; position: relative; 
+}
+.footer1 li::after{ 
+    content: ""; width: 2px; height: 10px; background-color: #2a3033 ; position: absolute; top: 31px; right: -10px;
+}
+.footer1 ul li a{
+    color: #fff; font-size: 14px; font-weight: 600;
+}
+.footer1 .fo_right{
+    background-color: #2a3033;  height: 45px; width: 300px; position: absolute; top: 12.5px; right: 210px; text-align: center;
+}
+.footer1 .fo_right span{
+    font-size: 18px; 
+}
+.footer1 .fo_right p{
+    color:#fff; font-size: 12px; font-weight: bold; 
+}
+.footer1 .site{
+    height: 45px; width: 200px; position: absolute; top: 12.5px; right:0px;
+}
+.footer2{
+    background-color: #4c5459;
+}
+.footer2 > div{
+    width: 1180px; padding: 0 20px; margin: 0 auto;
+}
+.footer2 > div .fo_logo{
+    margin:30px 0;
+    width: 130px; height: 50px;
+    background: url(./img/sp_com.png)no-repeat 0 0;
+    background-position: -150px 0;
+    overflow: hidden;
+    display: inline-block;
+}
+.footer2 > div p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer2 > div .location{
+    margin-bottom: 5px;
+}
+.footer2 > div .license{
+    padding-bottom: 20px;
+}
+.footer2 > div span{
+    font-weight: 700;
+    font-size: 17px;
 }
